@@ -5,11 +5,17 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export",
+    "server": "yarn build && NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "next-offline": "^5.0.2"
   }
 }
